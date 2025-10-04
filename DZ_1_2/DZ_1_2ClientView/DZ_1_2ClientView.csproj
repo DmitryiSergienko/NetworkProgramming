@@ -8,4 +8,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DZ_1_2ClientViewModel\DZ_1_2ClientViewModel.csproj" />
+  </ItemGroup>
+
 </Project>
