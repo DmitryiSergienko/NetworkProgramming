@@ -18,10 +18,10 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0">
-            <Button Command="{Binding StartOffServerCommand}" Content="Сервер вкл." />
-            <Button Command="{Binding AddRecipe}" Content="Добавить" />
-            <Button Command="{Binding EditRecipe}" Content="Редактировать" />
-            <Button Command="{Binding DeleteRecipe}" Content="Удалить" />
+            <Button Command="{Binding ConnectToServerCommand}" Content="{Binding ConnectionButtonText}" />
+            <Button Command="{Binding AddRecipeCommand}" Content="Добавить" />
+            <Button Command="{Binding EditRecipeCommand}" Content="Редактировать" />
+            <Button Command="{Binding DeleteRecipeCommand}" Content="Удалить" />
             <ListBox x:Name="RecipeList" Height="300" />
         </StackPanel>
         <Border

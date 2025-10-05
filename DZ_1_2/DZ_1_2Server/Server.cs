@@ -25,7 +25,6 @@ namespace DZ_1_2Server
             _serverTask = AcceptClientsAsync(_cts.Token);
             await _acceptLoopStarted.Task;
         }
-
         private async Task AcceptClientsAsync(CancellationToken ct)
         {
             try
@@ -48,7 +47,6 @@ namespace DZ_1_2Server
                 Console.WriteLine($"[Server] Ошибка: {ex}");
             }
         }
-
         private async Task HandleClientAsync(TcpClient client, CancellationToken ct)
         {
             try
@@ -73,7 +71,6 @@ namespace DZ_1_2Server
                 Console.WriteLine($"[Client] Ошибка: {ex.Message}");
             }
         }
-
         public async Task StopAsync()
         {
             _cts.Cancel();
@@ -84,7 +81,6 @@ namespace DZ_1_2Server
             }
             Console.WriteLine("[Server] Остановлен.");
         }
-
         public void Dispose()
         {
             _cts?.Dispose();
